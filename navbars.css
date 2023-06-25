@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  cursor: url('mouse.png'), auto;
+  background-color: #e1e1e1; /* Un color de fondo claro */
+}
+
+.content {
+  flex-grow: 1;
+}
+
+
+.navbar {
+  margin-bottom: 20px;
+  background-color: #3a8445 ;
+
+}
+
+/* Custom card pacman  */
+.custom-card {
+  position: relative;
+}
+
+.custom-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('pacman2.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  transition: all 0.3s ease-in-out; /* Asegura una transición suave */
+  z-index: 1; /* Pone la imagen de fondo debajo del contenido */
+}
+
+.custom-card:hover::before {
+  opacity: 0.8; /* Hace que la imagen de fondo se vuelva parcialmente transparente al pasar el mouse */
+}
+
+.d-flex {
+  position: relative;
+  z-index: 2; /* Mantiene el texto y el contenido encima de la imagen de fondo */
+}
+
+
+/*Custom card eye*/
+
+.custom-card-eye {
+  position: relative;
+}
+
+.custom-card-eye::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('eye.jpeg');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  transition: all 0.3s ease-in-out; /* Asegura una transición suave */
+  z-index: 1; /* Pone la imagen de fondo debajo del contenido */
+}
+
+.custom-card-eye:hover::before {
+  opacity: 0.5; /* Hace que la imagen de fondo se vuelva parcialmente transparente al pasar el mouse */
+}
+
+.d-flex {
+  position: relative;
+  z-index: 2; /* Mantiene el texto y el contenido encima de la imagen de fondo */
+}
+
+/*Custom card*/
+.custom-card-bus {
+  position: relative;
+}
+
+.custom-card-bus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('bus.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  transition: all 0.3s ease-in-out; /* Asegura una transición suave */
+  z-index: 1; /* Pone la imagen de fondo debajo del contenido */
+}
+
+.custom-card-bus:hover::before {
+  opacity: 0.6; /* Hace que la imagen de fondo se vuelva parcialmente transparente al pasar el mouse */
+}
+
+.d-flex {
+  position: relative;
+  z-index: 2; /* Mantiene el texto y el contenido encima de la imagen de fondo */
+}
+
+
+h3 {
+  -webkit-text-stroke: 1px white; /* Añade un borde de 1px negro al texto */
+}
+
+.text-border {
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Añade un borde de 1px negro al texto */
+}
+
+footer {
+  background-image: url('portal.jpeg');
+  background-repeat: repeat-x;
+  background-size: auto; /* Esto hará que la imagen cubra todo el footer, independientemente de su tamaño */
+}
+.navbar  {
+  background-image: url('portal.jpeg');
+  background-repeat: repeat-x;
+  background-size: auto; /* Esto hará que la imagen cubra todo el footer, independientemente de su tamaño */
+}
+
+.custom-nav .nav-link {
+  color: #fff;
+}
+
+.custom-nav .nav-link.dropdown-toggle {
+  color: #fff;
+}
+
+.custom-nav .dropdown-item {
+  color: #000000;
+}
+
+.custom-nav .nav-link.active {
+  color: #fff;
+}
+
+.social-links a,
+.social-links a i {
+  color: #ffffff;
+}
+
+.social-links a:visited,
+.social-links a:visited i {
+  color: #ffffff;
+}
+
+
+/* Estilo fondo de seccion BIO */
+
+.bg-body-tertiary-Bio {
+  background-image: url('lib.png');
+  background-size: 170px;
+  background-repeat: repeat;
+  background-position: center;
+  height: 400px;
+}
+
