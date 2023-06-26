@@ -40,6 +40,8 @@ body {
 
 .custom-card:hover::before {
   opacity: 0.8; /* Hace que la imagen de fondo se vuelva parcialmente transparente al pasar el mouse */
+  background-color: black !important; 
+  color: rgb(0, 0, 0) !important;
 }
 
 .d-flex {
@@ -164,3 +166,70 @@ footer {
   height: 400px;
 }
 
+p {
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.initial-content {
+  display: block;
+}
+
+.new-content {
+  display: none;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+
+.new-content-wrapper {
+  display: none;
+  position: relative;
+  top: -50px; /* Ajusta este valor a tu gusto */
+}
+
+.custom-card:hover .initial-content {
+  display: none;
+
+}
+
+.custom-card:hover .new-content,
+.custom-card:hover .new-content-wrapper {
+  display: block;
+}
+
+.card:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+
+
+.custom-card-eye:hover .initial-content {
+  display: none;
+
+}
+
+.custom-card-eye:hover .new-content,
+.custom-card-eye:hover .new-content-wrapper {
+  display: block;
+}
+
+
+.custom-card-bus:hover .initial-content {
+  display: none;
+
+}
+
+.custom-card-bus:hover .new-content,
+.custom-card-bus:hover .new-content-wrapper {
+  display: block;
+}
