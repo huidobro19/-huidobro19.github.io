@@ -3,12 +3,8 @@
 <html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.112.5">
-    <title>Navbar Template · Bootstrap v5.3</title>
+
+    <title>Paula Huidobro</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
 
@@ -172,8 +168,9 @@
 
   </head>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraft" type="text/css"/>
 
 <body>
 
@@ -189,10 +186,10 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Centered nav only</a>
+                  <a class="nav-link active" aria-current="page" href="#myFooter">Contact Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#myFooter">Get In Touch</a>
+                  <a class="nav-link" href="#myAbout">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled"></a>
@@ -200,9 +197,9 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Proyects</a>
                   <ul class="dropdown-menu " >
-                    <li><a class="dropdown-item " href="#myFooter">PacMen</a></li>
-                    <li><a class="dropdown-item" href="#myFooter">Eye</a></li>
-                    <li><a class="dropdown-item" href="#myFooter">Bus tracking</a></li>
+                    <li><a class="dropdown-item " href="#myProjects">PacMen</a></li>
+                    <li><a class="dropdown-item" href="#myProjects">Eye</a></li>
+                    <li><a class="dropdown-item" href="#myProjects">Bus tracking</a></li>
                   </ul>
                 </li>
               </ul>
@@ -285,7 +282,7 @@
       </style>
 
 
-      <div class="p-5 mb-4 bg-body-tertiary-Bio rounded-3 position-relative ">
+      <div id='myAbout'class="p-5 mb-4 bg-body-tertiary-Bio rounded-3 position-relative ">
 
         <div id="overlay" class='my-div rounded-3' style="display: none; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.5);">
           <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
@@ -293,14 +290,15 @@
             <p id="overlay-text" class="text-dark " style="position: absolute; top: 10%; left: 19%; width: 300px ;font-family: Arial Black;" >Hello! I'm Paula Huidobro. This page presents my MIT portfolio, showcasing various projects and the knowledge I've gained in full-stack software development. You'll also find a self-introduction video. I invite you to explore and interact with all the projects.</p>
           </div>
           <div class="py-5">
-            <button id="overlay-button-exit" style=" position: absolute; top: 50%; left: 100px; width:100px" class="btn btn-primary btn-lg" type="button">SALIR</button>
+            <button id="overlay-button-exit" style=" position: absolute; top: 65%; left: 100px; width:100px" class="btn btn-primary btn-lg" type="button">Exit</button>
           </div>
         </div>
       
         <div class="" style=" position: absolute; top: 20%; left: 100px;" >
-          <h1 class="display-5 text-white fw-bold">My Bio</h1>
-          <p class="col-md-8 text-white fs-4" style="width:200px;">Pulsa el Boton!</p>
-          <button id="overlay-button-enter" class="btn btn-primary btn-lg" type="button">PUSH ME</button>
+          <h1 class="display-5 text-white fw-bold">Paula </h1>
+          <h1 class="display-5 text-white fw-bold">Huidobro</h1>
+          <p class="col-md-8 text-white fs-4" style="width:200px;">Developer</p>
+          <button id="overlay-button-enter" class="btn btn-primary btn-lg" type="button">Push! for my Bio</button>
         </div>
         
       </div>
@@ -321,7 +319,7 @@
       </script>
 
 
-      <div class="row align-items-md-stretch" style="position:relative;">
+      <div class="row align-items-md-stretch" style="position:relative; ">
 
         <div class="col-md-6">
           <div class="h-100  p-5 text-bg-dark rounded-3">
@@ -333,7 +331,7 @@
         
 
         <div id="myDiv" class="col-md-6 " style="width: 660px; height: 350px;" >
-          <div id="innerDiv" class="h-100 p-5 bg-body-tertiary border rounded-3 " style="background-image: url('pelea.jpeg'); background-size: cover;">
+          <div id="innerDiv" class="h-100 p-5  border rounded-3 " style=" background-color: #e1e1e1; background-image: url('pelea.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
           </div>
         </div>
         
@@ -370,17 +368,21 @@
 
 
     
-    <main>
+
+    
+    <main id="myProjects">
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Proyects</h2>
+        <h2 class="pb-2 border-bottom">Projects</h2>
+
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-bg-white rounded-4 shadow-lg custom-card" >
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">PacMen</h3>
-                <ul class="d-flex list-unstyled mt-auto">
+                <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold initial-content">PacMen</h3> <!-- Añadido la clase initial-content -->
+                <ul class="d-flex list-unstyled mt-auto initial-content">
                   <li class="me-auto">
-                    <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white initial-content">
                   </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -391,18 +393,22 @@
                     <small></small>
                   </li>
                 </ul>
+                <div class="new-content-wrapper"> <!-- Nuevo div envolviendo el contenido -->
+                  <p class="new-content">Exercise where we manipulate the DOM to create elements in the browser that will move at different speeds, set within the context of a Pac-Man game.</p> <!-- Nuevo contenido a mostrar en el hover -->
+                </div>
               </div>
             </div>
           </div>
-
+          
+        
           <div class="col">
             <a href="https://www.youtube.com/watch?v=XjIJmdztNIs" style="text-decoration: none; color: inherit;">  
               <div class="card card-cover h-100 overflow-hidden text-bg-white rounded-4 shadow-lg custom-card-eye" >
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eye</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
+                  <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold initial-content">Eye</h3>
+                  <ul class="d-flex list-unstyled mt-auto initial-content">
                     <li class="me-auto">
-                      <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white initial-content">
                     </li>
                     <li class="d-flex align-items-center me-3">
                       <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -413,6 +419,9 @@
                       <small></small>
                     </li>
                   </ul>
+                  <div class="new-content-wrapper"> <!-- Nuevo div envolviendo el contenido -->
+                    <p class="new-content">HTML CSS and JavaScript come together in this exercise to give two eyes on the screen the ability to follow the movement of the mouse.</p> <!-- Nuevo contenido a mostrar en el hover -->
+                  </div>
                 </div>
               </div>
             </a>  
@@ -421,10 +430,10 @@
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg custom-card-bus" >
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bus tracking</h3>
+                <h3 class=" text-border pt-5 mt-5 mb-4 display-6 lh-1 fw-bold initial-content">Bus tracking</h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
-                    <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    <img src="mit2.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white initial-content">
                   </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -435,6 +444,9 @@
                     <small></small>
                   </li>
                 </ul>
+                <div class="new-content-wrapper"> <!-- Nuevo div envolviendo el contenido -->
+                  <p class="new-content">Exercise in which we use an api that creates a map to track a bus on its routes.</p> <!-- Nuevo contenido a mostrar en el hover -->
+                </div>
               </div>
             </div>
           </div>
@@ -457,6 +469,37 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
       </symbol>
     </svg>
+
+  </div>
+
+  <h1 style='margin:540px; margin-top: 20px;  margin-bottom:10px;'>Contact me</h1>
+
+  <div class='my-4 rounded-3' style="margin:20px auto; background-color: rgb(133, 65, 182); height:340px;">
+    <form>
+      <div class="row my-4" style='margin:5px;'>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+
+      <div class="form-group my-2" style='margin:20px;'>
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+      <div class="form-group my-2" style='margin:20px;'>
+        <label for="exampleFormControlTextarea1">Asunto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div style="display: flex; justify-content: center; align-items: center; ">
+        <button type="button" class="btn btn-light">Enviar</button>
+      </div>
+      
+    </form>
 
   </div>
 
