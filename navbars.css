@@ -71,6 +71,10 @@ body {
   z-index: 1; /* Pone la imagen de fondo debajo del contenido */
 }
 
+
+
+
+
 .custom-card-eye:hover::before {
   opacity: 0.5; /* Hace que la imagen de fondo se vuelva parcialmente transparente al pasar el mouse */
 }
@@ -170,6 +174,7 @@ p {
   font-family: 'MinecrafterAltRegular';
   font-weight: normal;
   font-style: normal;
+  font-size: 13px;
 }
 
 h1 {
